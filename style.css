@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image:url("coffeimg.jpg");
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+
+.name1{
+    line-height: 40px;
+    padding-left: 10px;
+    
+}
+.mobile{
+    
+    padding-left: 10px;
+
+}
+.mobile1{
+    
+    padding-left: 10px;
+
+}
+
+.div0{
+        
+        width: 1050px;
+        margin: 20px 120px;
+        height: auto;
+        background-color: white;
+        padding: 20px;
+        border: 5px solid rgb(57, 23, 23);
+
+}
+
+.div1{
+    line-height: 40px;
+}
+
+.div2{
+    line-height: 40px;
+}
+
+.div3{
+    line-height: 40px;
+}
+
+.div4{
+    line-height: 40px;
+}
+
+.div5{
+    line-height: 40px;
+}
+.div6{
+    line-height: 40px;
+}
+.div7{
+    line-height: 40px;
+}
+.div9{
+    line-height: 40px;
+}
+.div10{
+    line-height: 40px;
+}
+
+.div11{
+    line-height: 40px;
+}
+
+.next{
+   
+    
+    margin-left: 300px;
+    margin-right: 500px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+.printpage .next1{
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 300px;
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 200px;
+   
+}
+
+
+.next input{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.printpage{
+    
+    margin: 40px 120px;
+    width: 1000px;
+    height: auto;
+    display: none; 
+    background-color: white;
+    border: 5px solid rgb(79, 48, 21);
+    padding-left: 20px;
+    
+      
+}
+
+.printpage input{
+    font-size: 20px;
+    
+}
+
+table{
+    width: 100%;
+    height: auto;  
+    border: none;
+
+}
+
+tr{
+    height: 30px;
+
+}
+#row1,#row2,#row3,#row4,#row5,#row6,#row7,#row9,#row10{
+    display: none;
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>cafee</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+   <h1 id="h1" style="color: white; background-color: rgb(53, 25, 25); width: 400px; margin-left: 450px; border-radius: 50px;">Nothing before coffee</h1>
+
+   <div class="div0" id="new2">
+      <form action="#">
+
+      <h1 style="text-align: center;">NBC</h1>
+
+      <div style="display: flex;" >
+         <p>
+         Name <input type="text" class="name" placeholder="Enter your name" id="name" style="height: 30px;"></p>
+      
+      <p style="margin-left: 500px;">
+         Mobile No.<input type="text" class="mobile" placeholder="mobile number" id="mobile" style="height: 30px;"></p></div>
+
+
+      <div class="div1">
+         <input type="checkbox" onclick="enablefirst()" value="first" id="first">
+         <label for="first" id="latte" style="margin-left: 20px; font-size: 25px;">Latte</label>
+         <input type="text" id="price1" placeholder="Price" style="margin-left: 50px;" disabled onchange="amount1()">
+         <input type="text" id="qty1" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount1()">
+         <input type="text" id="disc1" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount1()">
+         <input type="text" id="tot1" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount1()">
+      </div>
+
+      <div class="div2">
+         <input type="checkbox" value="second" id="second" onclick="enablesecond()">
+         <label for="second" style=" font-size: 25px;">Americano</label>
+         <input type="text" id="price2" placeholder="Price" style="margin-left: 10px;" disabled onchange="amount2()">
+         <input type="text" id="qty2" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount2()">
+         <input type="text" id="disc2" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount2()">
+         <input type="text" id="tot2" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount2()">
+      </div>
+
+
+      <div class="div3">
+         <input type="checkbox" value="third" id="third" onclick=" enablethird()">
+         <label for="third" style=" font-size: 25px;">Cappuccino</label>
+         <input type="text" id="price3" placeholder="Price" style="margin-left: 2px;" disabled onchange="amount3()">
+         <input type="text" id="qty3" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount3()">
+         <input type="text" id="disc3" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount3()">
+         <input type="text" id="tot3" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount3()">
+      </div>
+
+
+      <div class="div4">
+         <input type="checkbox" value="forth" id="fourth" onclick="enablefourth()">
+         <label for="forth" style=" font-size: 25px;">Cortado</label>
+         <input type="text" id="price4" placeholder="Price" style="margin-left: 41px;" disabled onchange="amount4()">
+         <input type="text" id="qty4" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount4()">
+         <input type="text" id="disc4" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount4()">
+         <input type="text" id="tot4" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount4()">
+      </div>
+
+
+      <div class="div5">
+         <input type="checkbox" value="fifth" id="fifth" onclick="enablefifth()">
+         <label for="fifth" style=" font-size: 25px;">Red Eye</label>
+         <input type="text" id="price5" placeholder="Price" style="margin-left: 37px;" disabled onchange="amount5()">
+         <input type="text" id="qty5" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount5()">
+         <input type="text" id="disc5" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount5()">
+         <input type="text" id="tot5" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount5()">
+      </div>
+
+
+      <div class="div6">
+         <input type="checkbox" value="sixth" id="sixth" onclick="enablesixth()">
+         <label for="sixth" style=" font-size: 25px;">Mocha</label>
+         <input type="text" id="price6" placeholder="Price" style="margin-left: 53px;" disabled onchange="amount6()">
+         <input type="text" id="qty6" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount6()">
+         <input type="text" id="disc6" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount6()">
+         <input type="text" id="tot6" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount6()">
+      </div>
+
+
+      <div class="div7">
+         <input type="checkbox" value="seventh" id="seventh" onclick="enableseventh()">
+         <label for="seventh" style=" font-size: 25px;">Irish</label>
+         <input type="text" id="price7" placeholder="Price" style="margin-left: 77px;" disabled onchange="amount7()">
+         <input type="text" id="qty7" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount7()">
+         <input type="text" id="disc7" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount7()">
+         <input type="text" id="tot7" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount7()">
+      </div>
+
+
+      <div class="div9">
+         <input type="checkbox" value="nineth" id="nineth" onclick="enablenineth()">
+         <label for="nineth" style=" font-size: 25px;">Flat White</label>
+         <input type="text" id="price9" placeholder="Price" style="margin-left: 17px;" disabled onchange="amount9()">
+         <input type="text" id="qty9" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount9()">
+         <input type="text" id="disc9" placeholder="Discount" style="margin-left: 40px;" disabled onchange="amount9()">
+         <input type="text" id="tot9" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount9()">
+      </div>
+
+
+      <div class="div10">
+         <input type="checkbox" value="tenth" id="tenth" onclick="enabletenth()">
+         <label for="tenth" style=" font-size: 25px;">Ristretto</label>
+         <input type="text" id="price10" placeholder="Price" style="margin-left: 37px;" disabled onchange="amount10()">
+         <input type="text" id="qty10" placeholder="Quantity" style="margin-left: 40px;" disabled onchange="amount10()">
+         <input type="text" id="disc10" placeholder="Discount" style="margin-left: 40px;" disabled
+            onchange="amount10()">
+         <input type="text" id="tot10" placeholder="Total" style="margin-left: 60px;" disabled onclick="amount10()">
+      </div>
+
+      <div class="next">
+      
+         total<input type="text" id="endtotal" placeholder="Total Amount" onclick="alltotal()">
+         discount<input type="text" id="enddiscount" placeholder="Discount" onclick="enddiscount()">
+         pay<input type="text" id="pay" placeholder="payable Amount" onclick="paynow()">
+   
+         <button id="print" style="background-color: rgb(74, 30, 30); color: white;  width: 80px ; margin-top: 20px;" onclick="printit()">print</button>
+         <button type="reset" style="background-color: rgb(74, 30, 30); color: white; width: 80px; margin-top: 20px;" value="submit">reset</button>
+   
+         <h1 style="margin-top: 50px; text-align: center; font-style: italic;">THANK YOU</h1>
+      
+      </div>
+
+      </form>
+
+   </div>
+
+   
+
+
+
+<div class="printpage" id="new1">
+   <h1 style="margin-left: 48%;">NBC</h1>
+   <h2 style="font-style: italic;">YOUR Bill</h2>
+   <div style="display: flex;">
+         <p>Name<input type="text" placeholder="Enter your name" class="name1" id="name1" style="height: 30px;"></p>
+         <p  style="height: 30px; margin-left: 120px;">
+         Mobile No.<input type="text" placeholder="mobile number" class="mobile1" id="mobile1" >
+      </p></div>
+
+
+      <table>
+
+         <tr>
+            <td ><b>name</b></td>
+            <td > <b>price</b></td>
+            <td ><b>quantity</b></td>
+            <td ><b>discount</b></td>
+            <td ><b>total</b></td>
+         </tr>
+         <tr id="row1">
+            <td id="tda1"></td>
+            <td id="tda2"></td>
+            <td id="tda3"></td>
+            <td id="tda4"></td>
+            <td id="tda5"></td>
+         </tr>
+         <tr id="row2">
+            <td id="tdb1"></td>
+            <td id="tdb2"></td>
+            <td id="tdb3"></td>
+            <td id="tdb4"></td>
+            <td id="tdb5"></td>
+         </tr>
+         <tr id="row3">
+            <td id="tdc1"></td>
+            <td id="tdc2"></td>
+            <td id="tdc3"></td>
+            <td id="tdc4"></td>
+            <td id="tdc5"></td>
+         </tr>
+         <tr id="row4">
+            <td id="tdd1"></td>
+            <td id="tdd2"></td>
+            <td id="tdd3"></td>
+            <td id="tdd4"></td>
+            <td id="tdd5"></td>
+         </tr>
+         <tr id="row5">
+            <td id="tde1"></td>
+            <td id="tde2"></td>
+            <td id="tde3"></td>
+            <td id="tde4"></td>
+            <td id="tde5"></td>
+         </tr>
+         <tr id="row6">
+            <td id="tdf1"></td>
+            <td id="tdf2"></td>
+            <td id="tdf3"></td>
+            <td id="tdf4"></td>
+            <td id="tdf5"></td>
+         </tr>
+         <tr id="row7">
+            <td id="tdi1"></td>
+            <td id="tdi2"></td>
+            <td id="tdi3"></td>
+            <td id="tdi4"></td>
+            <td id="tdi5"></td>
+         </tr>
+         <tr id="row9">
+            <td id="tdg1"></td>
+            <td id="tdg2"></td>
+            <td id="tdg3"></td>
+            <td id="tdg4"></td>
+            <td id="tdg5"></td>
+            
+         </tr>
+         <tr id="row10">
+            <td id="tdh1"></td>
+            <td id="tdh2"></td>
+            <td id="tdh3"></td>
+            <td id="tdh4"></td>
+            <td id="tdh5"></td>
+         </tr>
+      </table>
+
+      
+         <div  class="next1">
+         total<input type="text" id="endtotal1" placeholder="Total Amount" onclick="alltotal()">
+      discount<input type="text" id="enddiscount1" placeholder="Discount">
+      pay<input type="text" id="pay1" placeholder="payable Amount">
+   </div>
+      
+
+      
+      
+
+
+      
+</div>
+
+
+   <script>
+      function enablefirst() {
+
+         var price = document.getElementById("price1");
+         var quantity = document.getElementById("qty1");
+         var discount = document.getElementById("disc1");
+         var total = document.getElementById("tot1");
+         var inp = document.getElementById("first");
+         var row1=document.getElementById("row1");
+
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row1.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+      function enablesecond() {
+
+         var price = document.getElementById("price2");
+         var quantity = document.getElementById("qty2");
+         var discount = document.getElementById("disc2");
+         var total = document.getElementById("tot2");
+         var inp = document.getElementById("second");
+         var row2=document.getElementById("row2");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row2.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+      function enablethird() {
+
+         var price = document.getElementById("price3");
+         var quantity = document.getElementById("qty3");
+         var discount = document.getElementById("disc3");
+         var total = document.getElementById("tot3");
+         var inp = document.getElementById("third");
+         var row3=document.getElementById("row3");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row3.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+      function enablefourth() {
+
+         var price = document.getElementById("price4");
+         var quantity = document.getElementById("qty4");
+         var discount = document.getElementById("disc4");
+         var total = document.getElementById("tot4");
+         var inp = document.getElementById("fourth");
+         var row4=document.getElementById("row4");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row4.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+      function enablefifth() {
+
+         var price = document.getElementById("price5");
+         var quantity = document.getElementById("qty5");
+         var discount = document.getElementById("disc5");
+         var total = document.getElementById("tot5");
+         var inp = document.getElementById("fifth");
+         var row5=document.getElementById("row5");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row5.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+      function enablesixth() {
+
+         var price = document.getElementById("price6");
+         var quantity = document.getElementById("qty6");
+         var discount = document.getElementById("disc6");
+         var total = document.getElementById("tot6");
+         var inp = document.getElementById("sixth");
+         var row6=document.getElementById("row6");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row6.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+      function enableseventh() {
+
+         var price = document.getElementById("price7");
+         var quantity = document.getElementById("qty7");
+         var discount = document.getElementById("disc7");
+         var total = document.getElementById("tot7");
+         var inp = document.getElementById("seventh");
+         var row7=document.getElementById("row7");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row7.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+
+      function enablenineth() {
+
+         var price = document.getElementById("price9");
+         var quantity = document.getElementById("qty9");
+         var discount = document.getElementById("disc9");
+         var total = document.getElementById("tot9");
+         var inp = document.getElementById("nineth");
+         var row9=document.getElementById("row9");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row9.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+
+      function enabletenth() {
+
+         var price = document.getElementById("price10");
+         var quantity = document.getElementById("qty10");
+         var discount = document.getElementById("disc10");
+         var total = document.getElementById("tot10");
+         var inp = document.getElementById("tenth")
+         var row10=document.getElementById("row10");
+
+         if (inp.checked) {
+            price.removeAttribute('disabled');
+            quantity.removeAttribute('disabled');
+            discount.removeAttribute('disabled');
+            total.removeAttribute('disabled');
+            row10.style.display="table-row"
+
+         }
+         else {
+            price.disabled = "true";
+            quantity.disabled = "true";
+            discount.disabled = "true";
+            total.disabled = "true";
+         }
+      }
+
+      function amount1() {
+         var price = (document.getElementById('price1').value);
+         var quantity = (document.getElementById('qty1').value);
+         var discount = (document.getElementById('disc1').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot1').value = total;
+
+      }
+
+      function amount2() {
+         var price = (document.getElementById('price2').value);
+         var quantity = (document.getElementById('qty2').value);
+         var discount = (document.getElementById('disc2').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot2').value = total;
+
+      }
+
+      function amount3() {
+         var price = (document.getElementById('price3').value);
+         var quantity = (document.getElementById('qty3').value);
+         var discount = (document.getElementById('disc3').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot3').value = total;
+
+      }
+
+      function amount4() {
+         var price = (document.getElementById('price4').value);
+         var quantity = (document.getElementById('qty4').value);
+         var discount = (document.getElementById('disc4').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot4').value = total;
+
+      }
+
+      function amount5() {
+         var price = (document.getElementById('price5').value);
+         var quantity = (document.getElementById('qty5').value);
+         var discount = (document.getElementById('disc5').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot5').value = total;
+
+      }
+
+      function amount6() {
+         var price = (document.getElementById('price6').value);
+         var quantity = (document.getElementById('qty6').value);
+         var discount = (document.getElementById('disc6').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot6').value = total;
+
+      }
+
+      function amount7() {
+         var price = (document.getElementById('price7').value);
+         var quantity = (document.getElementById('qty7').value);
+         var discount = (document.getElementById('disc7').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot7').value = total;
+
+      }
+
+      function amount9() {
+         var price = (document.getElementById('price9').value);
+         var quantity = (document.getElementById('qty9').value);
+         var discount = (document.getElementById('disc9').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot9').value = total;
+
+      }
+
+      function amount10() {
+         var price = (document.getElementById('price10').value);
+         var quantity = (document.getElementById('qty10').value);
+         var discount = (document.getElementById('disc10').value);
+         var total = (price * quantity) - discount;
+         document.getElementById('tot10').value = total;
+
+      }
+
+      function alltotal() {
+
+         var total1 = parseInt(document.getElementById('tot1').value == "" ? 0 : document.getElementById("tot1").value);
+         var total2 = parseInt(document.getElementById('tot2').value == "" ? 0 : document.getElementById("tot2").value);
+         var total3 = parseInt(document.getElementById('tot3').value == "" ? 0 : document.getElementById("tot3").value);
+         var total4 = parseInt(document.getElementById('tot4').value == "" ? 0 : document.getElementById("tot4").value);
+         var total5 = parseInt(document.getElementById('tot5').value == "" ? 0 : document.getElementById("tot5").value);
+         var total6 = parseInt(document.getElementById('tot6').value == "" ? 0 : document.getElementById("tot6").value);
+         var total7 = parseInt(document.getElementById('tot7').value == "" ? 0 : document.getElementById("tot7").value);
+         var total9 = parseInt(document.getElementById('tot9').value == "" ? 0 : document.getElementById("tot9").value);
+         var total10 = parseInt(document.getElementById('tot10').value == "" ? 0 : document.getElementById("tot10").value);
+
+
+
+         var discount1 = parseInt(document.getElementById('disc1').value == "" ? 0 : document.getElementById('disc1').value);
+         var discount2 = parseInt(document.getElementById('disc2').value == "" ? 0 : document.getElementById('disc2').value);
+         var discount3 = parseInt(document.getElementById('disc3').value == "" ? 0 : document.getElementById('disc3').value);
+         var discount4 = parseInt(document.getElementById('disc4').value == "" ? 0 : document.getElementById('disc4').value);
+         var discount5 = parseInt(document.getElementById('disc5').value == "" ? 0 : document.getElementById('disc5').value);
+         var discount6 = parseInt(document.getElementById('disc6').value == "" ? 0 : document.getElementById('disc6').value);
+         var discount7 = parseInt(document.getElementById('disc7').value == "" ? 0 : document.getElementById('disc7').value);
+         var discount9 = parseInt(document.getElementById('disc9').value == "" ? 0 : document.getElementById('disc9').value);
+         var discount10 = parseInt(document.getElementById('disc10').value == "" ? 0 : document.getElementById('disc10').value);
+
+         var total11 = (total1+discount1) +(total2+discount2) + (total3+discount3) +(total4+discount4) + (total5+discount5) + (total6+discount6) + (total7+discount7) +(total9+discount9) + (total10+discount10);
+         (document.getElementById('endtotal').value = total11);
+
+
+         var discount11 = discount1 + discount2 + discount3 + discount4 + discount5 + discount6 + discount7 + discount9 + discount10;
+         document.getElementById("enddiscount").value = discount11;
+
+
+         var paynow  = total11-discount11;
+         document.getElementById('pay').value=paynow;
+      }
+
+      function printit(){
+
+         var new2=document.getElementById("new2")
+         var new1 = document.getElementById("new1")
+         
+         new1.style.display="block"
+         new2.style.display="none"
+
+
+         var total1 = parseInt(document.getElementById('tot1').value == "" ? 0 : document.getElementById("tot1").value);
+         var total2 = parseInt(document.getElementById('tot2').value == "" ? 0 : document.getElementById("tot2").value);
+         var total3 = parseInt(document.getElementById('tot3').value == "" ? 0 : document.getElementById("tot3").value);
+         var total4 = parseInt(document.getElementById('tot4').value == "" ? 0 : document.getElementById("tot4").value);
+         var total5 = parseInt(document.getElementById('tot5').value == "" ? 0 : document.getElementById("tot5").value);
+         var total6 = parseInt(document.getElementById('tot6').value == "" ? 0 : document.getElementById("tot6").value);
+         var total7 = parseInt(document.getElementById('tot7').value == "" ? 0 : document.getElementById("tot7").value);
+         var total9 = parseInt(document.getElementById('tot9').value == "" ? 0 : document.getElementById("tot9").value);
+         var total10 = parseInt(document.getElementById('tot10').value == "" ? 0 : document.getElementById("tot10").value);
+
+
+
+         var discount1 = parseInt(document.getElementById('disc1').value == "" ? 0 : document.getElementById('disc1').value);
+         var discount2 = parseInt(document.getElementById('disc2').value == "" ? 0 : document.getElementById('disc2').value);
+         var discount3 = parseInt(document.getElementById('disc3').value == "" ? 0 : document.getElementById('disc3').value);
+         var discount4 = parseInt(document.getElementById('disc4').value == "" ? 0 : document.getElementById('disc4').value);
+         var discount5 = parseInt(document.getElementById('disc5').value == "" ? 0 : document.getElementById('disc5').value);
+         var discount6 = parseInt(document.getElementById('disc6').value == "" ? 0 : document.getElementById('disc6').value);
+         var discount7 = parseInt(document.getElementById('disc7').value == "" ? 0 : document.getElementById('disc7').value);
+         var discount9 = parseInt(document.getElementById('disc9').value == "" ? 0 : document.getElementById('disc9').value);
+         var discount10 = parseInt(document.getElementById('disc10').value == "" ? 0 : document.getElementById('disc10').value);
+
+         var total11 = (total1+discount1) +(total2+discount2) + (total3+discount3) +(total4+discount4) + (total5+discount5) + (total6+discount6) + (total7+discount7) +(total9+discount9) + (total10+discount10);
+         (document.getElementById('endtotal1').value = total11);
+
+
+         var discount11 = discount1 + discount2 + discount3 + discount4 + discount5 + discount6 + discount7 + discount9 + discount10;
+         document.getElementById("enddiscount1").value = discount11;
+
+
+         var paynow  = total11-discount11;
+         document.getElementById('pay1').value=paynow;
+
+         var naam=document.getElementById("name").value;
+         var mob=document.getElementById("mobile").value;
+         document.getElementById("name1").value=naam;
+         document.getElementById("mobile1").value=mob;
+         
+
+
+        
+
+         if (first.checked) {
+            
+            var price1 = document.getElementById("price1").value;
+            var quantity1 = document.getElementById("qty1").value;
+            var discount1 = document.getElementById("disc1").value;
+            var total1 = document.getElementById("tot1").value;
+         
+            document.getElementById("tda1").innerHTML="latte";
+            document.getElementById("tda2").innerHTML=price1;
+            document.getElementById('tda3').innerHTML=quantity1;
+            document.getElementById("tda4").innerHTML=discount1;
+            document.getElementById("tda5").innerHTML=total1;
+         }
+        
+
+         if (second.checked) {
+            
+            var price2 = document.getElementById("price2").value;
+            var quantity2 = document.getElementById("qty2").value;
+            var discount2 = document.getElementById("disc2").value;
+            var total2 = document.getElementById("tot2").value;
+         
+            document.getElementById("tdb1").innerHTML="Americano";
+            document.getElementById("tdb2").innerHTML=price2;
+            document.getElementById('tdb3').innerHTML=quantity2;
+            document.getElementById("tdb4").innerHTML=discount2;
+            document.getElementById("tdb5").innerHTML=total2;
+         }
+         
+
+         if (third.checked) {
+            
+            var price3 = document.getElementById("price3").value;
+            var quantity3 = document.getElementById("qty3").value;
+            var discount3 = document.getElementById("disc3").value;
+            var total3 = document.getElementById("tot3").value;
+         
+            document.getElementById("tdc1").innerHTML="Cappuccino";
+            document.getElementById("tdc2").innerHTML=price3;
+            document.getElementById('tdc3').innerHTML=quantity3;
+            document.getElementById("tdc4").innerHTML=discount3;
+            document.getElementById("tdc5").innerHTML=total3;
+         }
+         
+
+         if (fourth.checked) {
+            
+            var price4 = document.getElementById("price4").value;
+            var quantity4 = document.getElementById("qty4").value;
+            var discount4 = document.getElementById("disc4").value;
+            var total4 = document.getElementById("tot4").value;
+         
+            document.getElementById("tdd1").innerHTML="Cortado ";
+            document.getElementById("tdd2").innerHTML=price4;
+            document.getElementById('tdd3').innerHTML=quantity4;
+            document.getElementById("tdd4").innerHTML=discount4;
+            document.getElementById("tdd5").innerHTML=total4;
+         }
+         
+         if (fifth.checked) {
+            
+            var price5 = document.getElementById("price5").value;
+            var quantity5 = document.getElementById("qty5").value;
+            var discount5 = document.getElementById("disc5").value;
+            var total5 = document.getElementById("tot5").value;
+         
+            document.getElementById("tde1").innerHTML="Red Eye ";
+            document.getElementById("tde2").innerHTML=price5;
+            document.getElementById('tde3').innerHTML=quantity5;
+            document.getElementById("tde4").innerHTML=discount5;
+            document.getElementById("tde5").innerHTML=total5;
+         }
+         
+         
+
+         if (sixth.checked) {
+            
+            var price6 = document.getElementById("price6").value;
+            var quantity6 = document.getElementById("qty6").value;
+            var discount6 = document.getElementById("disc6").value;
+            var total6= document.getElementById("tot6").value;
+         
+            document.getElementById("tdf1").innerHTML="Mocha ";
+            document.getElementById("tdf2").innerHTML=price6;
+            document.getElementById('tdf3').innerHTML=quantity6;
+            document.getElementById("tdf4").innerHTML=discount6;
+            document.getElementById("tdf5").innerHTML=total6;
+         }
+        
+         if (seventh.checked) {
+            
+            var price7 = document.getElementById("price7").value;
+            var quantity7 = document.getElementById("qty7").value;
+            var discount7 = document.getElementById("disc7").value;
+            var total7= document.getElementById("tot7").value;
+         
+            document.getElementById("tdi1").innerHTML="Irish";
+            document.getElementById("tdi2").innerHTML=price7;
+            document.getElementById('tdi3').innerHTML=quantity7;
+            document.getElementById("tdi4").innerHTML=discount7;
+            document.getElementById("tdi5").innerHTML=total7;
+         }
+         
+
+         if (nineth.checked) {
+            
+            var price9 = document.getElementById("price9").value;
+            var quantity9 = document.getElementById("qty9").value;
+            var discount9 = document.getElementById("disc9").value;
+            var total9= document.getElementById("tot9").value;
+         
+            document.getElementById("tdg1").innerHTML="Flat White ";
+            document.getElementById("tdg2").innerHTML=price9;
+            document.getElementById('tdg3').innerHTML=quantity9;
+            document.getElementById("tdg4").innerHTML=discount9;
+            document.getElementById("tdg5").innerHTML=total9;
+         }
+         
+
+         if (tenth.checked) {
+            
+            var price10 = document.getElementById("price10").value;
+            var quantity10 = document.getElementById("qty10").value;
+            var discount10 = document.getElementById("disc10").value;
+            var total10= document.getElementById("tot10").value;
+         
+            document.getElementById("tdh1").innerHTML="Ristretto ";
+            document.getElementById("tdh2").innerHTML=price10;
+            document.getElementById('tdh3').innerHTML=quantity10;
+            document.getElementById("tdh4").innerHTML=discount10;
+            document.getElementById("tdh5").innerHTML=total10;
+         }
+        
+         
+      }
+
+
+
+
+      
+   
+   </script>
+
+</body>
+
+</html>
